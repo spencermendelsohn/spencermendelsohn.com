@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import project from "./projects/names.json";
+
+type Projects = {
+    name: string;
+    description?: string;
+    langauges?: string[];
+}[];
+
+const listOfProjects: Projects = project.listOfProjects;
+---
+
+<Layout title="Projects">
+    <main>
+        <h1 class="h1">
+            <span class="text-gradient">Projects</span>
+        </h1>
+        <ul role="list" class="link-card-grid">
+            {
+                listOfProjects.map(({ name, description }) => (
+                    <Card
+                        title={name}
+                        href={"../projects/".concat(
+                            name.toLocaleLowerCase().replaceAll(" ", "_"),
+                        )}
+                        body={description || "No description"}
+                    />
+                ))
+            }
+        </ul>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 2rem;
+        padding: 0;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>

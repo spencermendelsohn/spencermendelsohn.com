@@ -1,0 +1,19 @@
+{
+    "listOfProjects": [
+        {
+            "name": "Orange Subaru Spotter",
+            "description": "Simple form for spotting a subaru",
+            "languages": [
+                "HTML",
+                "Python"
+            ]
+        },
+        {
+            "name": "Google Scrapper",
+            "description": "Simple Google Scrapper written in Python",
+            "languages": [
+                "Python"
+            ]
+        }
+    ]
+}
