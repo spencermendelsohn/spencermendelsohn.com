@@ -1,0 +1,25 @@
+{
+    "work": [
+        {
+            "company": "Numerated",
+            "position": "Software Engineer",
+            "type": "Co-op",
+            "year": "Spring 2024",
+            "link": "https://numerated.com/"
+        },
+        {
+            "company": "Putnam Investments",
+            "position": "Software Engineer",
+            "type": "Internship",
+            "year": "Summer 2023",
+            "link": "https://www.putnam.com/putnam-investments/"
+        },
+        {
+            "company": "Putnam Investments",
+            "position": "Product Management",
+            "type": "Internship",
+            "year": "Summer 2022",
+            "link": "https://www.putnam.com/putnam-investments/"
+        }
+    ]
+}

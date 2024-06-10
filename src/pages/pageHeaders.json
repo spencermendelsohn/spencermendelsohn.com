@@ -1,0 +1,15 @@
+{
+    "pageHeaders": [
+        {
+            "name": "Projects"
+        },
+        {
+            "name": "Cooking"
+        },
+        {
+            "name": "Photography",
+            "link": "https://www.instagram.com/mendelsohnphotography/",
+            "target": "_blank"
+        }
+    ]
+}

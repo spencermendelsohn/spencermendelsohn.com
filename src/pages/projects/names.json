@@ -10,7 +10,7 @@
         },
         {
             "name": "Google Scrapper",
-            "description": "Simple Google Scrapper written in Python",
+            "description": "Simple Google Search Scrapper",
             "languages": [
                 "Python"
             ]

@@ -1,9 +1,21 @@
 ---
+import works from "../pages/workexperience.json";
+import Card from "../components/CardNoLink.astro";
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+
+type work = {
+	company: string;
+	position: string;
+	type: string;
+	year: string;
+	link: string;
+}[];
+
+const listOfWork: work = works.work;
 ---
 
 <!doctype html>
@@ -16,21 +28,21 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-
-	<body class="center">
-		<main>
-			<h1>
-				<span class="text-gradient">Spencer Mendelsohn</span>
-			</h1>
-			<h2 class="text-gradient-links">Software Engineer</h2>
-		</main>
-		<h1>
+	<span>
+		<header>
 			<nav>
-				<a class="text-gradient" href="/">Home</a>
-				<a class="text-gradient" href="./projects">Projects</a>
+				<a class="text-gradient-links" href="./">Home</a>
+				<a class="text-gradient-links" href="./projects">Projects</a>
+				<a class="text-gradient-links" href="./cooking">Cooking</a>
+				<a
+					class="text-gradient-links"
+					href="https://www.instagram.com/mendelsohnphotography/"
+					target="_blank">Photography</a
+				>
 			</nav>
-		</h1>
-	</body>
+		</header>
+	</span>
+	<slot />
 
 	<style is:global>
 		:root {
@@ -54,8 +66,19 @@ const { title } = Astro.props;
 			);
 		}
 		main {
+			margin: auto;
+			padding: 1rem;
+			width: 800px;
+			max-width: calc(100% - 2rem);
 			color: white;
-			text-align: center;
+			font-size: 20px;
+			line-height: 1.6;
+		}
+		.link-card-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+			gap: 2rem;
+			padding: 0;
 		}
 		h1 {
 			font-weight: 700;
@@ -66,6 +89,15 @@ const { title } = Astro.props;
 			font-weight: 700;
 			line-height: 1;
 			text-align: center;
+		}
+		p {
+			font-weight: 100;
+			line-height: 1;
+			text-align: center;
+			padding-left: 100px;
+			padding-right: 100px;
+			text-align: center;
+			line-height: 20px;
 		}
 		html {
 			font-family: system-ui, sans-serif;
@@ -79,7 +111,7 @@ const { title } = Astro.props;
 			background-size: 400%;
 			background-position: 0%;
 
-			padding: 14px 16px;
+			padding: 10px 10px;
 			text-decoration: none;
 		}
 		.text-gradient-links {
@@ -87,7 +119,8 @@ const { title } = Astro.props;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-size: 400%;
-			padding: 14px 16px;
+			padding: 0px 16px;
+			line-height: 40px;
 			text-decoration: none;
 		}
 		.center {
@@ -98,5 +131,29 @@ const { title } = Astro.props;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		.hyperlink {
+			color: white;
+		}
+		.instructions {
+			margin-bottom: 2rem;
+			border: 1px solid rgba(var(--accent-light), 25%);
+			background: linear-gradient(
+				rgba(var(--accent-dark), 66%),
+				rgba(var(--accent-dark), 33%)
+			);
+			padding: 10px;
+			line-height: 50px;
+			border-radius: 8px;
+		}
+		.instructions code {
+			font-size: 0.8em;
+			font-weight: bold;
+			background: rgba(var(--accent-light), 12%);
+			color: rgb(255, 255, 255);
+			border-radius: 4px;
+			padding: 0.3em 0.4em;
+		}
 	</style>
+
+
 </html>

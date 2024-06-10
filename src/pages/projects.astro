@@ -6,7 +6,7 @@ import project from "./projects/names.json";
 type Projects = {
     name: string;
     description?: string;
-    langauges?: string[];
+    languages?: string[];
 }[];
 
 const listOfProjects: Projects = project.listOfProjects;
@@ -19,13 +19,17 @@ const listOfProjects: Projects = project.listOfProjects;
         </h1>
         <ul role="list" class="link-card-grid">
             {
-                listOfProjects.map(({ name, description }) => (
+                listOfProjects.map(({ name, description, languages }) => (
                     <Card
                         title={name}
                         href={"../projects/".concat(
                             name.toLocaleLowerCase().replaceAll(" ", "_"),
                         )}
                         body={description || "No description"}
+                        languages={
+                            languages?.toString().replaceAll(",", " +  ") ||
+                            "No langauges used"
+                        }
                     />
                 ))
             }
