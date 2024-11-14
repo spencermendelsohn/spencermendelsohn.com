@@ -3,6 +3,13 @@
         {
             "company": "Numerated",
             "position": "Software Engineer",
+            "type": "Part-time",
+            "year": "Fall 2024",
+            "link": "https://numerated.com/"
+        },
+        {
+            "company": "Numerated",
+            "position": "Software Engineer",
             "type": "Co-op",
             "year": "Spring 2024",
             "link": "https://numerated.com/"

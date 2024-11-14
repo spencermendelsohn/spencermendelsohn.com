@@ -1,5 +1,5 @@
 ---
-import pageNames from "../pages/pageHeaders.json";
+import pageNames from "../pages/data/pageHeaders.json";
 interface Props {
 	title: string;
 }
@@ -50,8 +50,8 @@ const listOfHeaders: PagesHeadersType = pageNames.pageHeaders;
 
 	<style is:global>
 		:root {
-			--accent: 89, 89, 89;
-			--accent-light: 255, 237, 99;
+			--accent: 235, 125, 52;
+			--accent-light: 105, 101, 99;
 			--accent-dark: 89, 89, 89;
 			--accent-gradient: linear-gradient(
 				45deg,
@@ -73,6 +73,14 @@ const listOfHeaders: PagesHeadersType = pageNames.pageHeaders;
 			font-family: system-ui, sans-serif;
 			background: #13151a;
 			background-size: 224px;
+		}
+		main {
+			margin: auto;
+			width: 800px;
+			max-width: calc(100% - 2rem);
+			color: white;
+			font-size: 20px;
+			line-height: 1.6;
 		}
 		code {
 			font-family:
@@ -104,6 +112,12 @@ const listOfHeaders: PagesHeadersType = pageNames.pageHeaders;
 			padding: 0px 16px;
 			line-height: 40px;
 			text-decoration: none;
+		}
+		.link-card-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+			gap: 2rem;
+			padding: 0;
 		}
 	</style>
 

@@ -1,19 +1,74 @@
 {
     "listOfProjects": [
         {
+            "name": "Open House AI/ML Project",
+            "description": "Collaborative AI/ML project developed for a CS course",
+            "languages": [
+                "Python",
+                "Machine Learning",
+                "AWS"
+            ],
+            "link": "https://github.com/CS4992-AI-ML/open-house"
+        },
+        {
             "name": "Orange Subaru Spotter",
-            "description": "Simple form for spotting a subaru",
+            "description": "Simple form for spotting a Subaru and submitting the location",
             "languages": [
                 "HTML",
+                "Python",
+                "AWS"
+            ],
+            "link": "https://github.com/spencermendelsohn/orange"
+        },
+        {
+            "name": "RabbitMQ Middleware Experiment",
+            "description": "Experimenting with RabbitMQ as middleware for message brokering",
+            "languages": [
                 "Python"
-            ]
+            ],
+            "link": "https://github.com/spencermendelsohn/rabbitMQ-Middleware-Experiment"
+        },
+        {
+            "name": "Spencermendelsohn.com",
+            "description": "Personal portfolio website for showcasing projects and skills",
+            "languages": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "link": "https://github.com/spencermendelsohn/spencermendelsohn.com"
+        },
+        {
+            "name": "Tkinter Python Projects",
+            "description": "Collection of small projects built using the Tkinter library",
+            "languages": [
+                "Python"
+            ],
+            "link": "https://github.com/spencermendelsohn/Tkinter-Python-Projects"
+        },
+        {
+            "name": "SQL Practice",
+            "description": "Repository for practicing SQL queries and concepts",
+            "languages": [
+                "SQL"
+            ],
+            "link": "https://github.com/spencermendelsohn/SQL-Practice"
         },
         {
             "name": "Google Scrapper",
-            "description": "Simple Google Search Scrapper",
+            "description": "Simple Google Search Scraper using various libraries",
             "languages": [
                 "Python"
-            ]
+            ],
+            "link": "https://github.com/spencermendelsohn/GoogleScrape"
+        },
+        {
+            "name": "CAD Projects",
+            "description": "Collection of various CAD designs and projects from different times",
+            "languages": [
+                "CAD"
+            ],
+            "link": "https://github.com/spencermendelsohn/CAD-Projects"
         }
     ]
 }

@@ -1,7 +1,7 @@
 ---
 import Home from "../layouts/Homepage.astro";
 import Card from "../components/CardNoLink.astro";
-import works from "./workexperience.json";
+import works from "./data/workexperience.json";
 import {
 	Astronav,
 	MenuItems,
@@ -28,13 +28,13 @@ const listOfWork: work = works.work;
 			<span class="text-gradient-links">Spencer Mendelsohn</span>
 		</h1>
 		<h2 class="text-gradient"><i>Software Engineer</i></h2>
+		<h2 class="text-gradient"><i>Boston, MA</i></h2>
 		<main>
 			<p>
 				I'm a Software Enginner in my 4th year at Northeastern
-				University studying Computer Science with a concentration in
-				Software. In my free time I like to cook and do photography.
+				University studying Computer Science. In my free time I like to cook and photograph nature.
 			</p>
-			<h2>About</h2>
+			<h2>Technical Experience</h2>
 			<p>
 				<code class="instructions">Python</code>
 				<code class="instructions">Java</code>
@@ -63,15 +63,6 @@ const listOfWork: work = works.work;
 </Home>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;

@@ -1,5 +1,5 @@
 ---
-import works from "../pages/workexperience.json";
+import works from "../pages/data/workexperience.json";
 import Card from "../components/CardNoLink.astro";
 interface Props {
 	title: string;
@@ -33,7 +33,7 @@ const listOfWork: work = works.work;
 			<nav>
 				<a class="text-gradient-links" href="./">Home</a>
 				<a class="text-gradient-links" href="./projects">Projects</a>
-				<a class="text-gradient-links" href="./cooking">Cooking</a>
+				<!--<a class="text-gradient-links" href="./cooking">Cooking</a>-->
 				<a
 					class="text-gradient-links"
 					href="https://www.instagram.com/mendelsohnphotography/"
@@ -67,7 +67,7 @@ const listOfWork: work = works.work;
 		}
 		main {
 			margin: auto;
-			padding: 1rem;
+
 			width: 800px;
 			max-width: calc(100% - 2rem);
 			color: white;
@@ -87,15 +87,14 @@ const listOfWork: work = works.work;
 		}
 		h2 {
 			font-weight: 700;
-			line-height: 1;
 			text-align: center;
 		}
 		p {
 			font-weight: 100;
 			line-height: 1;
 			text-align: center;
-			padding-left: 100px;
-			padding-right: 100px;
+			padding-left: 1rem;
+			padding-right: 1rem;
 			text-align: center;
 			line-height: 20px;
 		}
@@ -104,16 +103,7 @@ const listOfWork: work = works.work;
 			background: #13151a;
 			background-size: 224px;
 		}
-		.text-gradient {
-			background-image: var(--accent-gradient);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-size: 400%;
-			background-position: 0%;
 
-			padding: 10px 10px;
-			text-decoration: none;
-		}
 		.text-gradient-links {
 			background-image: var(--accent-gradient-link);
 			-webkit-background-clip: text;
