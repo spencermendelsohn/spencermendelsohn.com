@@ -11,16 +11,6 @@
             "link": "https://github.com/CS4992-AI-ML/open-house"
         },
         {
-            "name": "Orange Subaru Spotter",
-            "description": "Simple form for spotting a Subaru and submitting the location",
-            "languages": [
-                "HTML",
-                "Python",
-                "AWS"
-            ],
-            "link": "https://github.com/spencermendelsohn/orange"
-        },
-        {
             "name": "RabbitMQ Middleware Experiment",
             "description": "Experimenting with RabbitMQ as middleware for message brokering",
             "languages": [
@@ -55,7 +45,7 @@
             "link": "https://github.com/spencermendelsohn/SQL-Practice"
         },
         {
-            "name": "Google Scrapper",
+            "name": "Google Scraper",
             "description": "Simple Google Search Scraper using various libraries",
             "languages": [
                 "Python"
