@@ -2,14 +2,6 @@
 import Home from "../layouts/Homepage.astro";
 import Card from "../components/CardNoLink.astro";
 import works from "./data/workexperience.json";
-import {
-	Astronav,
-	MenuItems,
-	MenuIcon,
-	Dropdown,
-	DropdownItems,
-	DropdownSubmenu,
-} from "astro-navbar";
 
 type work = {
 	company: string;
@@ -31,7 +23,7 @@ const listOfWork: work = works.work;
 		<h2 class="text-gradient"><i>Boston, MA</i></h2>
 		<main>
 			<p>
-				I'm a Software Enginner in my 4th year at Northeastern
+				I'm a Software Engineer in my 4th year at Northeastern
 				University studying Computer Science. In my free time I like to cook and photograph nature.
 			</p>
 			<h2>Technical Experience</h2>
