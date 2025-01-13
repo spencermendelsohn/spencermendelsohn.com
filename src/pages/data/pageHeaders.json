@@ -4,8 +4,18 @@
             "name": "Projects"
         },
         {
+            "name": "Resume",
+            "link": "https://drive.google.com/file/d/1lcjK3GzwhT_wvyYBbVEmxztgaSuuVqQ-/view?usp=sharing",
+            "target": "_blank"
+        },
+        {
             "name": "Photography",
             "link": "https://www.instagram.com/mendelsohnphotography/",
+            "target": "_blank"
+        },
+        {
+            "name": "Cooking",
+            "link": "https://www.instagram.com/chefmendelsohn/",
             "target": "_blank"
         }
     ]
