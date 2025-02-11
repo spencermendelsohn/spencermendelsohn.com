@@ -1,0 +1,92 @@
+{
+    "food": [
+        {
+            "name": "Asparagus and Potatoes",
+            "emoji": "🥬🥔"
+        },
+        {
+            "name": "Baked Mac and Cheese",
+            "emoji": "🧀"
+        },
+        {
+            "name": "Beef Bulgogi",
+            "emoji": "🥩"
+        },
+        {
+            "name": "Birria Inspired Tacos",
+            "emoji": "🥩🌮"
+        },
+        {
+            "name": "Chicken Bowl",
+            "emoji": "🐔🥙"
+        },
+        {
+            "name": "Chicken and Broccoli",
+            "emoji": "🐔🥦"
+        },
+        {
+            "name": "Chicken Fajitas",
+            "emoji": "🐔🥙"
+        },
+        {
+            "name": "Chicken Katsu",
+            "emoji": "🍗"
+        },
+        {
+            "name": "Chicken Tacos and Potatoes",
+            "emoji": "🌮🥔"
+        },
+        {
+            "name": "Chicken and Yellow Rice",
+            "emoji": "🐔🍚"
+        },
+        {
+            "name": "Cookies",
+            "emoji": "🍪"
+        },
+        {
+            "name": "French Toast",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Fried Rice",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Hummus",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Italian Sausage and Pasta",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Lemon Chicken Wrap",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Lemon Chicken",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Lo Mein",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Omelette and Homefries",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Peanut Noodles",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Pickles",
+            "emoji": "🐄"
+        },
+        {
+            "name": "Pretzel",
+            "emoji": "🐄"
+        }
+    ]
+}
