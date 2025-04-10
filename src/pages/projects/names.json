@@ -1,6 +1,15 @@
 {
     "listOfProjects": [
         {
+            "name": "Create Together",
+            "description": "Online multiplayer game inspired by the popular in-person \"Painting Swap Challenge\"",
+            "languages": [
+                "TypeScript",
+                "JavaScript"
+            ],
+            "link": "https://github.com/spencermendelsohn/create-together"
+        },
+        {
             "name": "Open House AI/ML Project",
             "description": "Collaborative AI/ML project developed for a CS course",
             "languages": [
