@@ -2,17 +2,17 @@
 import works from "../pages/data/workexperience.json";
 import Card from "../components/CardNoLink.astro";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 
 type work = {
-	company: string;
-	position: string;
-	type: string;
-	year: string;
-	link: string;
+  company: string;
+  position: string;
+  type: string;
+  year: string;
+  link: string;
 }[];
 
 const listOfWork: work = works.work;
@@ -20,140 +20,144 @@ const listOfWork: work = works.work;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<span>
-		<header>
-			<nav>
-				<a class="text-gradient-links" href="./">Home</a>
-				<a class="text-gradient-links" href="./projects">Projects</a>
-				<a class="text-gradient-links" href="https://drive.google.com/file/d/1MKWOGZh91PqPOvVIQD_6zBmPYhnvMTuY/view?usp=sharing" target="_blank">
-					Resume</a>
-				<a
-					class="text-gradient-links"
-					href="https://www.instagram.com/mendelsohnphotography/"
-					target="_blank">Photography</a
-				>
-				<a
-					class="text-gradient-links"
-					href="https://www.instagram.com/chefmendelsohn/"
-					target="_blank">Cooking</a
-				>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <span>
+    <header>
+      <nav>
+        <a class="text-gradient-links" href="./">Home</a>
+        <a class="text-gradient-links" href="./projects">Projects</a>
+        <a
+          class="text-gradient-links"
+          href="https://drive.google.com/file/d/1RlIRPWD6y4yIsbwGET5sRRUONGucaUaJ/view?usp=sharing"
+          target="_blank"
+        >
+          Resume</a
+        >
+        <a
+          class="text-gradient-links"
+          href="https://www.instagram.com/mendelsohnphotography/"
+          target="_blank">Photography</a
+        >
+        <a
+          class="text-gradient-links"
+          href="https://private-chef-hccg.vercel.app/"
+          target="_blank">Cooking</a
+        >
+      </nav>
+    </header>
+  </span>
+  <slot />
 
-			</nav>
-		</header>
-	</span>
-	<slot />
+  <style is:global>
+    :root {
+      --accent: 235, 125, 52;
+      --accent-light: 105, 101, 99;
+      --accent-dark: 89, 89, 89;
+      --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        rgb(0, 0, 0) 60%
+      );
+      --accent-link: 89, 89, 89;
+      --accent-light-link: 255, 237, 99;
+      --accent-dark-link: 89, 89, 89;
+      --accent-gradient-link: linear-gradient(
+        45deg,
+        rgb(var(--accent-link)),
+        rgb(var(--accent-light-link)) 30%,
+        rgb(0, 0, 0) 60%
+      );
+    }
+    main {
+      margin: auto;
 
-	<style is:global>
-		:root {
-			--accent: 235, 125, 52;
-			--accent-light: 105, 101, 99;
-			--accent-dark: 89, 89, 89;
-			--accent-gradient: linear-gradient(
-				45deg,
-				rgb(var(--accent)),
-				rgb(var(--accent-light)) 30%,
-				rgb(0, 0, 0) 60%
-			);
-			--accent-link: 89, 89, 89;
-			--accent-light-link: 255, 237, 99;
-			--accent-dark-link: 89, 89, 89;
-			--accent-gradient-link: linear-gradient(
-				45deg,
-				rgb(var(--accent-link)),
-				rgb(var(--accent-light-link)) 30%,
-				rgb(0, 0, 0) 60%
-			);
-		}
-		main {
-			margin: auto;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 2rem;
+      padding: 0;
+    }
+    h1 {
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+    }
+    h2 {
+      font-weight: 700;
+      text-align: center;
+    }
+    p {
+      font-weight: 100;
+      line-height: 1;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      line-height: 20px;
+    }
+    html {
+      font-family: system-ui, sans-serif;
+      background: #13151a;
+      background-size: 224px;
+    }
 
-			width: 800px;
-			max-width: calc(100% - 2rem);
-			color: white;
-			font-size: 20px;
-			line-height: 1.6;
-		}
-		.link-card-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-			gap: 2rem;
-			padding: 0;
-		}
-		h1 {
-			font-weight: 700;
-			line-height: 1;
-			text-align: center;
-		}
-		h2 {
-			font-weight: 700;
-			text-align: center;
-		}
-		p {
-			font-weight: 100;
-			line-height: 1;
-			text-align: center;
-			padding-left: 1rem;
-			padding-right: 1rem;
-			text-align: center;
-			line-height: 20px;
-		}
-		html {
-			font-family: system-ui, sans-serif;
-			background: #13151a;
-			background-size: 224px;
-		}
-
-		.text-gradient-links {
-			background-image: var(--accent-gradient-link);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-size: 400%;
-			padding: 0px 16px;
-			line-height: 40px;
-			text-decoration: none;
-		}
-		.center {
-			position: fixed;
-			text-justify: auto;
-			vertical-align: middle;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-		.hyperlink {
-			color: white;
-		}
-		.instructions {
-			margin-bottom: 2rem;
-			border: 1px solid rgba(var(--accent-light), 25%);
-			background: linear-gradient(
-				rgba(var(--accent-dark), 66%),
-				rgba(var(--accent-dark), 33%)
-			);
-			padding: 10px;
-			line-height: 50px;
-			border-radius: 8px;
-		}
-		.instructions code {
-			font-size: 0.8em;
-			font-weight: bold;
-			background: rgba(var(--accent-light), 12%);
-			color: rgb(255, 255, 255);
-			border-radius: 4px;
-			padding: 0.3em 0.4em;
-		}
-	</style>
+    .text-gradient-links {
+      background-image: var(--accent-gradient-link);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      padding: 0px 16px;
+      line-height: 40px;
+      text-decoration: none;
+    }
+    .center {
+      position: fixed;
+      text-justify: auto;
+      vertical-align: middle;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hyperlink {
+      color: white;
+    }
+    .instructions {
+      margin-bottom: 2rem;
+      border: 1px solid rgba(var(--accent-light), 25%);
+      background: linear-gradient(
+        rgba(var(--accent-dark), 66%),
+        rgba(var(--accent-dark), 33%)
+      );
+      padding: 10px;
+      line-height: 50px;
+      border-radius: 8px;
+    }
+    .instructions code {
+      font-size: 0.8em;
+      font-weight: bold;
+      background: rgba(var(--accent-light), 12%);
+      color: rgb(255, 255, 255);
+      border-radius: 4px;
+      padding: 0.3em 0.4em;
+    }
+  </style>
 
 
 </html>

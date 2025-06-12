@@ -1,5 +1,46 @@
 ---
-import Layout from "../layouts/Layout.astro";
+type foodRecipes = {
+  name: string;
+  emoji: string;
+}[];
 ---
 
-<Layout title="Cooking" />
+<style>
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+</style>
+
+<html>
+  <head>
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://private-chef-hccg.vercel.app/"
+    />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>
+      If you are not redirected automatically, <a
+        href="https://private-chef-hccg.vercel.app/">click here</a
+      >.
+    </p>
+  </body>
+</html>
