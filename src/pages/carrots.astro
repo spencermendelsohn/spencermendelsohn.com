@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+const title = "Carrots";
+const carrot_counter: number = 43;
+---
+
+<Layout title={title}>
+  <main>
+    <h1 class="h1" style="text-align:center;"><span class="text-gradient-links">How many bags of carrots this year</span></h1>
+
+    <section style="text-align:center; margin-top:2rem;">
+      <p id="count" style="font-size:4rem; margin:0;">{carrot_counter}</p>
+    </section>
+  </main>
+
+  <style>
+    /* simple styling for count */
+    #count { font-variant-numeric: tabular-nums; }
+  </style>
+</Layout>
