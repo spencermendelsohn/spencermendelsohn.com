@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 const title = "Carrots";
 const carrot_counter: number = 43;
+const today_date = new Date();
 ---
 
 <Layout title={title}>
@@ -10,6 +11,7 @@ const carrot_counter: number = 43;
 
     <section style="text-align:center; margin-top:2rem;">
       <p id="count" style="font-size:4rem; margin:0;">{carrot_counter}</p>
+      <p id="day" style="font-size:4rem; margin:0;"> {today_date.toString()} </p>
     </section>
   </main>
 
